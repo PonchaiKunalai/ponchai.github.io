@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>somehting</title>
+         <script type="text/javascript" src="http://hammerjs.github.io/dist/hammer.min.js"></script>
+         <script>
+            var trans = document.getElementById('circleDiv');
+            var tra = new Hammer(trans);
+
+            tra.get('rotate').set({ enable: true });
+
+            tra.on("rotate", function(event) {
+            event.preventDefault();
+              //alert('rotated');
+            });
+
+         </script>
+    </head>
+    <body>
+        <div class="trans-circle" id="circleDiv" style="background: grey; height: 200px; width: 200px; position: absolute; z-index:10000">
+          <div class="border-circle">
+            <div class="large-circle">
+              <p>Lorem Ipsum is simply dummy text of the printing r of Communications<br/> Afghanisthan</p>
+            </div>
+            <div class="mini-circles1">
+               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorront Revitalization Corportation</p>
+            </div>
+          </div>
+        </div>
+    </body>
+
+</html>
